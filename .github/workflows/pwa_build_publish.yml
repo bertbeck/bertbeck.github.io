@@ -28,8 +28,7 @@ jobs:
         git config --global user.email bertbeck@gmail.com
         git config --global user.name bertbeck
         git status
-        # ENTER YOUR ACCOUNT NAME IN THE GITHUB REMOTE URL
-        # git remote add origin https://${{secrets.commit_secret}}@github.com/bertbeck/bertbeck.github.io.git
+        git remote add origin https://${{secrets.commit_secret}}@github.com/bertbeck/bertbeck.github.io.git
         git checkout -b master
         git add --all
         git commit -m "update website"
